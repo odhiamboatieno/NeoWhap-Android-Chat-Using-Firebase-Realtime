@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tommy.oneneo.neowhap">
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <application
+        android:name=".Utils.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".WelcomeSlide.WelcomeActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WelcomeSlide.IntroActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".Home.MainActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".LoginReg.LoginActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ForgotPassword.ForgotPassActivity"
+            android:parentActivityName=".LoginReg.LoginActivity" />
+        <activity
+            android:name=".LoginReg.RegisterActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".About.AboutAppActivity"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".Home.MainActivity" />
+        <activity
+            android:name=".ProfileSetting.SettingsActivity"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".Home.MainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ProfileSetting.StatusUpdateActivity"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".ProfileSetting.SettingsActivity" />
+        <activity
+            android:name=".Friends.FriendsActivity"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".Home.MainActivity" />
+        <activity
+            android:name=".Profile.ProfileActivity"
+            android:configChanges="orientation|screenSize|screenLayout">
+            <intent-filter>
+                <action android:name="com.tommy.oneneo.neowhap_TARGET_NOTIFICATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Chat.ChatActivity"
+            android:parentActivityName=".Home.MainActivity" />
+        <activity
+            android:name=".Search.SearchActivity"
+            android:configChanges="orientation|screenSize" /> <!-- Cropping image library -->
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" /> <!-- Firebase Messaging Service -->
+        <service android:name=".Utils.FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+</manifest>

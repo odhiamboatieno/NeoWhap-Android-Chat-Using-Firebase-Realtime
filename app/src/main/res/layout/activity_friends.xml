@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Friends.FriendsActivity">
+
+    <!--
+    <include layout="@layout/all_app_bar_layout"
+        android:id="@+id/people_appbar"/>
+-->
+    <include
+        layout="@layout/all_app_bar_layout"
+        android:id="@+id/friends_appbar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/friendList"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>
