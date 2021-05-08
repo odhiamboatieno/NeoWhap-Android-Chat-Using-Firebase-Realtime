@@ -2,7 +2,7 @@
     <string name="app_name">NeoWhap</string>
     <string name="app_name_slogan">urgent messages</string>
 
-    <string name="give_correct_information">Please your give correct information. Because, your email &amp; phone number needs to be verification.</string>
+    <string name="give_correct_information">Please your give correct information. Because, your email &amp; phone number needs to be verifified.</string>
 
     <!-- My Common Strings -->
     <string name="student_name">Odhiambo Atieno</string>
@@ -14,7 +14,7 @@
     <string name="profile">Profile</string>
     <string name="friends">Friends</string>
     <string name="about_app">About App</string>
-    <string name="all_peoples">Peoples</string>
+    <string name="all_peoples">People</string>
     <string name="all_friends">Friends</string>
 
 
@@ -33,11 +33,11 @@
 
 
     <!-- About App Strings -->
-    <string name="varsity_name">MURANGA UNIVERSITY</string>
-    <string name="instructor1_name">Odhiambo Thomas</string>
-    <string name="instructor_name">Odhiambo Thomas</string>
+    <string name="varsity_name">MURANG'A UNIVERSITY</string>
+    <string name="instructor1_name">Odhiambo Atieno</string>
+    <string name="instructor_name">Odhiambo Atieno/string>
     <string name="about_text">This application is for chatting-</string>
-    <string name="project_git_link"><u>#</u></string>
+    <string name="project_git_link"><u>https://github.com/odhiamboatieno/NeoWhap-Android-Chat-Using-Firebase-Realtime</u></string>
     <string name="about_app_detail">x</string>
     <string name="student_id_details">B.Sc in Software Engineering</string>
 

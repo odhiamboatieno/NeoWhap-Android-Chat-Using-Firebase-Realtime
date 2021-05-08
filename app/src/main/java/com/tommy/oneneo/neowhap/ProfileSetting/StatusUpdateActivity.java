@@ -90,7 +90,7 @@ public class StatusUpdateActivity extends AppCompatActivity {
 
     private void changeProfileStatus(String new_status) {
         if (TextUtils.isEmpty(new_status)){
-            SweetToast.warning(getApplicationContext(), "Please write something about status");
+            SweetToast.warning(getApplicationContext(), "Please write something on your status");
         } else {
             progressDialog.setMessage("Updating status...");
             progressDialog.show();
